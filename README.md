@@ -2,25 +2,25 @@
 
 ## Datos estudiantes
 
-**Nombre:** Samy Mallerly Tapias Puerta Y Daniela Peña Arias
+*Nombre:* Samy Mallerly Tapias Puerta Y Daniela Peña Arias
 
-**Carrera:** Ingeniería en Software y Datos
+*Carrera:* Ingeniería en Software y Datos
 
-**Evidencia:** Manipulación de Arreglos y Listas en Java
+*Evidencia:* Manipulación de Arreglos y Listas en Java
 
 ## Descripción
 
-Pizza-Track es un programa desarrollado en **Java** que simula la gestión de pedidos de una pizzería utilizando **pilas manuales**.
+Pizza-Track es un programa desarrollado en *Java* que simula la gestión de pedidos de una pizzería utilizando *pilas manuales*.
 
 El programa permite registrar pizzas, deshacer el último pedido realizado y rehacer un pedido que había sido deshecho. Para esto se utilizan dos pilas manuales implementadas mediante una estructura de lista enlazada.
 
-Cada pizza contiene un nombre y un arreglo fijo de **3 ingredientes**.
+Cada pizza contiene un nombre y un arreglo fijo de *3 ingredientes*.
 
 ## Objetivo
 
-Comprender el funcionamiento de las **pilas manuales**, aplicando las operaciones `push()`, `pop()`, `peek()` e `isEmpty()` en un simulador de gestión de pedidos.
+Comprender el funcionamiento de las *pilas manuales*, aplicando las operaciones push(), pop(), peek() e isEmpty() en un simulador de gestión de pedidos.
 
-El proyecto también permite practicar el uso de **arreglos, listas enlazadas, programación orientada a objetos y control de versiones con GitHub**.
+El proyecto también permite practicar el uso de *arreglos, listas enlazadas, programación orientada a objetos y control de versiones con GitHub*.
 
 ## Tecnologías utilizadas
 
@@ -34,8 +34,8 @@ El proyecto también permite practicar el uso de **arreglos, listas enlazadas, p
 
 El proyecto está organizado de la siguiente manera:
 
-```text
-Daniela_Peña_Manipulación de Arreglos y Listas en Java/
+text
+Samy_Tapias_Manipulación de Arreglos y Listas en Java/
 ├── src/
 │   ├── Pizza.java
 │   ├── Nodo.java
@@ -51,49 +51,57 @@ Daniela_Peña_Manipulación de Arreglos y Listas en Java/
 │   └── Captura_5.png
 │
 └── README.md
-```
+
 
 ## Descripción de los archivos
 
-- **Pizza.java:** representa una pizza y almacena su nombre y sus 3 ingredientes. También contiene el enlace hacia la siguiente pizza.
-- **Nodo.java:** representa cada elemento de la lista enlazada utilizada para construir la pila. Cada nodo almacena una pizza y una referencia al siguiente nodo.
-- **Pila.java:** implementa una pila manual mediante una lista enlazada y contiene las operaciones push(), pop(), peek() e isEmpty().
-- **GestionPedidos.java:** administra las dos pilas manuales: una para los pedidos registrados y otra para los pedidos deshechos.
-- **Principal.java:** contiene el menú principal y permite al usuario interactuar con el programa.
+- *Pizza.java:* representa una pizza y almacena su nombre y sus 3 ingredientes. También contiene el enlace hacia la siguiente pizza.
+- *Nodo.java:* representa cada elemento de la lista enlazada utilizada para construir la pila. Cada nodo almacena una pizza y una referencia al siguiente nodo.
+- *Pila.java:* implementa una pila manual mediante una lista enlazada y contiene las operaciones push(), pop(), peek() e isEmpty().
+- *GestionPedidos.java:* administra las dos pilas manuales: una para los pedidos registrados y otra para los pedidos deshechos.
+- *Principal.java:* contiene el menú principal y permite al usuario interactuar con el programa.
 
 
 ## Cómo ejecutar el programa
 
 1. Abrir la carpeta de la tarea en Visual Studio Code.
 2. Verificar que esté instalado el JDK Eclipse Temurin.
-3. Abrir la carpeta `src`.
-4. Abrir el archivo `Principal.java`.
-5. Presionar el botón **Run** o ejecutar el programa desde la terminal.
-5. Utilizar las opciones disponibles en el menú.
+3. Abrir la carpeta src.
+4. Abrir el archivo Principal.java.
+5. Presionar el botón *Run* o ejecutar el programa desde la terminal.
+6. Utilizar las opciones disponibles en el menú.
 
 ## Opciones del programa
 
-1. **Registrar Pizza**
+1. *Registrar Pizza*
 
 Permite ingresar el nombre de la pizza y exactamente 3 ingredientes.
 
-La pizza se agrega al tope de la pila manual principal mediante `push()`.
+La pizza se agrega al tope de la pila manual principal mediante push().
 
-2. **Deshacer**
+2. *Deshacer*
 
-Retira la última pizza registrada mediante `pop()` y la pasa a la segunda pila manual para poder recuperarla posteriormente.
+Retira la última pizza registrada mediante pop() y la pasa a la segunda pila manual para poder recuperarla posteriormente.
 
-3. **Rehacer**
+3. *Rehacer*
 
 Recupera la última pizza deshecha y la vuelve a colocar en la pila principal.
 
-4. **Mostrar pedido actual**
+4. *Mostrar pedido actual*
 
-Consulta la pizza que está en el tope mediante `peek()`, sin eliminarla.
+Consulta la pizza que está en el tope mediante peek(), sin eliminarla.
 
-0. **Salir**
+0. *Salir*
 
 Finaliza la ejecución del programa.
+
+## ¿Qué es una pila?
+
+Una pila es una estructura de datos que funciona siguiendo el principio LIFO (Last In, First Out), que significa “el último en entrar es el primero en salir”.
+
+En una pila, los elementos se agregan y se retiran únicamente desde el tope.
+
+Para este proyecto, la pila se implementa manualmente utilizando una lista enlazada, donde cada nodo almacena una pizza y una referencia al siguiente nodo.
 
 ## Operaciones de la pila manual
 
@@ -119,8 +127,8 @@ Verifica si la pila se encuentra vacía.
 
 Para realizar las funciones Deshacer (Undo) y Rehacer (Redo) se utilizan dos pilas manuales:
 
-**Pila principal:** almacena los pedidos registrados.
-**Pila de rehacer:** almacena temporalmente los pedidos que fueron deshechos.
+*Pila principal:* almacena los pedidos registrados.
+*Pila de rehacer:* almacena temporalmente los pedidos que fueron deshechos.
 Deshacer
 
 Cuando se selecciona la opción Deshacer, se utiliza `pop()`para retirar la última pizza de la pila principal y luego`push()`para colocarla en la pila de rehacer.
@@ -131,35 +139,45 @@ Cuando se selecciona la opción Rehacer, se utiliz`pop()`para retirar la pizza d
 
 De esta manera se conserva el pedido completo, incluyendo su nombre y sus tres ingredientes.
 
+## Aplicación de la pila en Undo y Redo
+
+El funcionamiento de la pila es fundamental para realizar las opciones Deshacer (Undo) y Rehacer (Redo).
+
+Cuando se registran varios pedidos, el último pedido agregado queda en el tope de la pila. Por esta razón, al realizar Undo, se retira primero el pedido más reciente mediante pop().
+
+Ese pedido pasa a la pila de rehacer. Si posteriormente se selecciona Redo, se retira el último pedido de esta segunda pila mediante pop() y se vuelve a colocar en la pila principal utilizando push().
+
+De esta manera, los pedidos se pueden deshacer y recuperar manteniendo el orden en que fueron agregados y retirados.
+
 ## Capturas de pantalla
 
 ### 1. Registrar Pizza
 
-Se selecciona la opción **Registrar Pizza**, se ingresa el nombre de la pizza y sus tres ingredientes.
+Se selecciona la opción *Registrar Pizza*, se ingresa el nombre de la pizza y sus tres ingredientes.
 
 ![Registrar Pizza](Capturas/Captura_1.png)
 
 ### 2. Deshacer (Undo)
 
-Se selecciona la opción **Deshacer (Undo)** para retirar el último pedido registrado de la pila principal.
+Se selecciona la opción *Deshacer (Undo)* para retirar el último pedido registrado de la pila principal.
 
 ![Deshacer (Undo)](Capturas/Captura_2.png)
 
 ### 3. Rehacer (Redo)
 
-Se selecciona la opción **Rehacer (Redo)** para recuperar el pedido que fue deshecho.
+Se selecciona la opción *Rehacer (Redo)* para recuperar el pedido que fue deshecho.
 
 ![Rehacer (Redo)](Capturas/Captura_3.png)
 
 ### 4. Mostrar Pedido Actual
 
- Se selecciona la opción **Mostrar Pedido Actual** para visualizar la pizza que se encuentra en el tope de la pila, incluyendo sus ingredientes.
+ Se selecciona la opción *Mostrar Pedido Actual* para visualizar la pizza que se encuentra en el tope de la pila, incluyendo sus ingredientes.
 
 ![Mostrar Pedido Actual](Capturas/Captura_4.png)
 
 ### 5. Salir
 
-Se selecciona la opción **Salir** para finalizar la ejecución del programa.
+Se selecciona la opción *Salir* para finalizar la ejecución del programa.
 
 ![Salir](Capturas/Captura_5.png)
 
