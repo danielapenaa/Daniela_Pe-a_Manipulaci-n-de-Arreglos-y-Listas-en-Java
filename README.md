@@ -183,6 +183,8 @@ Se selecciona la opción *Salir* para finalizar la ejecución del programa.
 
 ## Video de sustentación
 
+// link del video: https://drive.google.com/file/d/1nPJLqAr1jQY0La8AyfE21mIcVYGrREn4/view?usp=sharing
+
 En el video se explica el funcionamiento del proyecto, incluyendo las operaciones principales de la pila manual como push(), pop(), peek() e isEmpty().
 
 También se demuestra el funcionamiento del programa mediante el proceso de Registrar → Deshacer → Rehacer.
